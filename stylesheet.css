@@ -1,0 +1,139 @@
+/* CSSのリセット（消さないでください） */
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Avenir Next", "Hiragino Kaku Gothic ProN W3", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+/* ここからCSSを記述してください */
+.container {
+  width: 100%; /* コンテナの幅を100%に設定 */
+  padding: 0 15px; /* コンテナの内側に余白を設定 */
+  margin: 0 auto; /* 中央揃え */
+  max-width: 950px; /* 最大幅を設定（必要に応じて調整） */
+}
+.header {
+  height:90px;
+  background-color:rgba(34, 49, 52, 0.9);
+  position: center;
+  top: 0;
+  z-index: 10;
+}
+
+.header-logo {
+  font-size:36px;
+  color:white;
+  padding:20px 40px;
+  float:left;
+}
+.header-list li{
+  list-style:none;
+  font-size:16px;
+  color:white;
+  padding:33px 20px;
+  float:left;
+}
+
+.main {
+  padding: 5px 70px;
+}
+
+.copy-container {
+  background-image: url(https://user0514.cdnw.net/shared/img/thumb/macbook1983_TP_V.jpg);
+  background-size: cover;
+  background-position: center; /* 画像の中央にフォーカス */
+  color:white;
+}
+
+.copy-container h1 {
+  font-size: 140px;
+}
+
+.copy-container h2 {
+  font-size: 60px;
+}
+
+.copy-container span {
+  color: #ff4a4a;
+}
+
+/* mainが途切れる原因は下記コード */
+.contents {
+  height: 500px;
+  /* mainが途切れる原因は下記コード */
+  margin-top: 100px;
+  position: relative;
+}
+
+.section-title {
+  border-bottom: 2px solid #dee7ec;
+  font-size: 28px;
+  padding-bottom: 15px;
+  margin-bottom: 50px;
+}
+
+.contents-item {
+  float: left;
+  width: 25%;
+}
+
+.contents-item p {
+  font-size: 24px;
+  margin-top: 40px;
+}
+.contact-form {
+  margin-top:90px;
+  margin-bottom:40px;
+}
+.contact-form h3 {
+  margin-bottom:40px;
+}
+
+.contact-form p {
+  margin-bottom:8px;
+}
+
+input, textarea {
+  border:1px solid #dee7ec;
+  font-size:18px;
+  margin-bottom:40px;
+  width:450px;
+  height:70px;
+}
+.contact-submit {
+  background-color:#DEE7EC;
+  color:gray;
+  margin-bottom:5px;
+}
+
+.footer {
+  height:220px;
+  color:white;
+  background-color:#2F5167;
+}
+
+.footer-logo {
+  float:left;
+  font-size:32px;
+  padding:40px;
+}
+
+.footer-list {
+  float:right;
+  font-size:16px;
+  padding:40px;
+}
+
+.footer-list li{
+  margin-bottom:20px;
+}
