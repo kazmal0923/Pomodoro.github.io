@@ -17,35 +17,49 @@ li {
 
 /* ここからCSSを記述してください */
 .container {
-  width: 100%; /* コンテナの幅を100%に設定 */
-  padding: 0 15px; /* コンテナの内側に余白を設定 */
+  width: 100%; /* モバイルデバイス用 */
+  max-width: 1200px; /* 最大幅を設定 */
   margin: 0 auto; /* 中央揃え */
-  max-width: 950px; /* 最大幅を設定（必要に応じて調整） */
+  padding: 0 15px; /* 左右のパディング */
+  box-sizing: border-box; /* パディングとボーダーをwidthに含める */
 }
+
 .header {
+  width: 100%;
+  margin: 0 auto; /* 中央揃え */
+  padding: 0;
   height:90px;
   background-color:rgba(34, 49, 52, 0.9);
-  position: center;
+  position: fixed;
   top: 0;
   z-index: 10;
 }
 
+.logo {
+  width: 80px;
+  padding: 18px 0px;
+  float: left;
+}
+
+
+
 .header-logo {
   font-size:36px;
   color:white;
-  padding:20px 40px;
+  padding:20px 40px 20px 0;
   float:left;
 }
 .header-list li{
   list-style:none;
   font-size:16px;
   color:white;
-  padding:33px 20px;
+  padding:33px 10px;
   float:left;
 }
 
 .main {
-  padding: 5px 70px;
+  width: 100%;
+  margin-top: 90px;
 }
 
 .copy-container {
@@ -53,6 +67,9 @@ li {
   background-size: cover;
   background-position: center; /* 画像の中央にフォーカス */
   color:white;
+  height: 380px;
+  padding-top: 100px;
+  text-align: center;
 }
 
 .copy-container h1 {
@@ -69,7 +86,7 @@ li {
 
 /* mainが途切れる原因は下記コード */
 .contents {
-  height: 500px;
+  height: 400;
   /* mainが途切れる原因は下記コード */
   margin-top: 100px;
   position: relative;
@@ -85,12 +102,23 @@ li {
 .contents-item {
   float: left;
   width: 25%;
+  position: relative;
+  height: 300px;
+}
+
+.contents-item img {
+  padding: 0 20px;
 }
 
 .contents-item p {
   font-size: 24px;
-  margin-top: 40px;
+  position: absolute;
+  top: 85px;
+  left: 83px;
 }
+
+
+
 .contact-form {
   margin-top:90px;
   margin-bottom:40px;
